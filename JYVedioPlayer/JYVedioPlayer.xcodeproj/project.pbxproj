@@ -14,6 +14,9 @@
 		D76BA6E61EC3FEF9003213B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76BA6E41EC3FEF9003213B4 /* LaunchScreen.storyboard */; };
 		D76BA6F11EC3FEF9003213B4 /* JYVedioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA6F01EC3FEF9003213B4 /* JYVedioPlayerTests.swift */; };
 		D76BA6FC1EC3FEF9003213B4 /* JYVedioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA6FB1EC3FEF9003213B4 /* JYVedioPlayerUITests.swift */; };
+		D76BA70B1EC4009E003213B4 /* JYVedioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BA70A1EC4009E003213B4 /* JYVedioPlayerView.swift */; };
+		D76BA70D1EC400A8003213B4 /* JYVedioPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D76BA70C1EC400A8003213B4 /* JYVedioPlayerView.xib */; };
+		D76BA70F1EC4016E003213B4 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D76BA70E1EC4016E003213B4 /* test.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D76BA6F71EC3FEF9003213B4 /* JYVedioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYVedioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76BA6FB1EC3FEF9003213B4 /* JYVedioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYVedioPlayerUITests.swift; sourceTree = "<group>"; };
 		D76BA6FD1EC3FEF9003213B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76BA70A1EC4009E003213B4 /* JYVedioPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYVedioPlayerView.swift; sourceTree = "<group>"; };
+		D76BA70C1EC400A8003213B4 /* JYVedioPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYVedioPlayerView.xib; sourceTree = "<group>"; };
+		D76BA70E1EC4016E003213B4 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,14 @@
 		D76BA6DA1EC3FEF8003213B4 /* JYVedioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				D76BA7091EC4008F003213B4 /* JYVedioPlayerView */,
 				D76BA6DB1EC3FEF8003213B4 /* AppDelegate.swift */,
 				D76BA6DD1EC3FEF9003213B4 /* ViewController.swift */,
 				D76BA6DF1EC3FEF9003213B4 /* Main.storyboard */,
 				D76BA6E21EC3FEF9003213B4 /* Assets.xcassets */,
 				D76BA6E41EC3FEF9003213B4 /* LaunchScreen.storyboard */,
 				D76BA6E71EC3FEF9003213B4 /* Info.plist */,
+				D76BA70E1EC4016E003213B4 /* test.mp4 */,
 			);
 			path = JYVedioPlayer;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				D76BA6FD1EC3FEF9003213B4 /* Info.plist */,
 			);
 			path = JYVedioPlayerUITests;
+			sourceTree = "<group>";
+		};
+		D76BA7091EC4008F003213B4 /* JYVedioPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				D76BA70A1EC4009E003213B4 /* JYVedioPlayerView.swift */,
+				D76BA70C1EC400A8003213B4 /* JYVedioPlayerView.xib */,
+			);
+			path = JYVedioPlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76BA70D1EC400A8003213B4 /* JYVedioPlayerView.xib in Resources */,
 				D76BA6E61EC3FEF9003213B4 /* LaunchScreen.storyboard in Resources */,
 				D76BA6E31EC3FEF9003213B4 /* Assets.xcassets in Resources */,
+				D76BA70F1EC4016E003213B4 /* test.mp4 in Resources */,
 				D76BA6E11EC3FEF9003213B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76BA6DE1EC3FEF9003213B4 /* ViewController.swift in Sources */,
+				D76BA70B1EC4009E003213B4 /* JYVedioPlayerView.swift in Sources */,
 				D76BA6DC1EC3FEF8003213B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,26 +1,84 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iwv-Va-RlE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="hUk-3y-dre">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wuz-Wo-qrr" customClass="ViewController" customModule="JYVedioPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="vk7-rR-jGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLZ-60-GQW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Qvb-gr-JQH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tis-qR-K8k">
+                                <rect key="frame" x="112.5" y="120" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1C6-zc-9El"/>
+                                    <constraint firstAttribute="width" constant="150" id="r2k-Yb-0hy"/>
+                                </constraints>
+                                <state key="normal" title="播放本地视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="localButtonDidClick:" destination="wuz-Wo-qrr" eventType="touchUpInside" id="Wzn-u1-pLD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtB-Um-Zdr">
+                                <rect key="frame" x="112" y="250" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="播放在线视频">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onlineButtonDidClick:" destination="wuz-Wo-qrr" eventType="touchUpInside" id="qT5-hX-IPD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MtB-Um-Zdr" firstAttribute="top" secondItem="tis-qR-K8k" secondAttribute="bottom" constant="80" id="JCe-Uv-Dkt"/>
+                            <constraint firstItem="MtB-Um-Zdr" firstAttribute="height" secondItem="tis-qR-K8k" secondAttribute="height" id="RHe-4o-mDh"/>
+                            <constraint firstItem="MtB-Um-Zdr" firstAttribute="centerX" secondItem="tis-qR-K8k" secondAttribute="centerX" id="dvg-3i-0Pj"/>
+                            <constraint firstItem="MtB-Um-Zdr" firstAttribute="width" secondItem="tis-qR-K8k" secondAttribute="width" id="iwW-OL-lzn"/>
+                            <constraint firstItem="tis-qR-K8k" firstAttribute="top" secondItem="vk7-rR-jGq" secondAttribute="bottom" constant="100" id="qY8-JL-i1a"/>
+                            <constraint firstItem="tis-qR-K8k" firstAttribute="centerX" secondItem="Qvb-gr-JQH" secondAttribute="centerX" id="tjj-R9-Ghv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PWq-cU-k4c"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qem-SK-TrQ" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1014" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SF1-yV-LKc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iwv-Va-RlE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nyt-Pp-0mH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wuz-Wo-qrr" kind="relationship" relationship="rootViewController" id="Ass-HK-nyb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v5a-xs-XZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="84.107946026986511"/>
         </scene>
     </scenes>
 </document>
