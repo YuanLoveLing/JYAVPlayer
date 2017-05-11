@@ -1,14 +1,14 @@
 //
-//  JYAVPlayerUITests.swift
-//  JYAVPlayerUITests
+//  JYVedioPlayerUITests.swift
+//  JYVedioPlayerUITests
 //
-//  Created by 靳志远 on 2017/5/10.
+//  Created by 靳志远 on 2017/5/11.
 //  Copyright © 2017年 靳志远. All rights reserved.
 //
 
 import XCTest
 
-class JYAVPlayerUITests: XCTestCase {
+class JYVedioPlayerUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

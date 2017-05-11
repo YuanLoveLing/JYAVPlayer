@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JYAVPlayer.xcodeproj">
+      location = "self:JYVedioPlayer.xcodeproj">
    </FileRef>
 </Workspace>
